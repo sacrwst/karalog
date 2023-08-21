@@ -10,7 +10,7 @@ type Props = {
 
 export const Card: FC<Props> = ({ shop }) => {
   return (
-    <Link to={'/'} className="w-1/3 overflow-hidden rounded shadow-lg">
+    <Link to={`shop/${shop.id}`} className="w-1/3 overflow-hidden rounded shadow-lg">
       <img className="w-full" src="http://picsum.photos/400/300" alt="Sunset in the mountains" />
       <div className="px-6 py-4">
         <div className="mb-2 text-xl font-bold">{shop.name}</div>
