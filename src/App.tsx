@@ -1,10 +1,14 @@
+import Home from '@/components/pages/Home'
 import '@/styles/globals.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <>
-      <h1 className="text-7xl">Vite + React + TypeScript + Tailwind CSS</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
