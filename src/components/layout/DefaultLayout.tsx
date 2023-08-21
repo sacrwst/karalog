@@ -1,11 +1,13 @@
 import { FC } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 export const DefaultLayout: FC = () => {
   return (
     <>
       <header className="bg-red-400">
-        <h1 className="py-6 text-center text-3xl text-white">Karalog</h1>
+        <Link to={'/'}>
+          <h1 className="py-6 text-center text-3xl text-white">Karalog</h1>
+        </Link>
       </header>
       <main className="my-6">
         <div className="mx-auto max-w-7xl px-6">
